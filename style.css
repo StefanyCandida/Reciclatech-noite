@@ -63,7 +63,7 @@ header {
   padding: 10px 30px;
 }
 
-.text {
+.hero {
   display: flex;
   justify-content: space-between;
   margin: 37px;
@@ -71,29 +71,29 @@ header {
   gap: 50px;
   height: 60vh;
 }
-.text img {
+.hero img {
   width: 30vw;
   margin-bottom: 30px;
 }
-.text .text1 {
-  height: 90%;
+.hero .text {
+  height: 85%;
 }
-.text .text1 .textos {
+.hero .text .textos {
   display: flex;
   flex-direction: column;
   margin-bottom: 50px;
 }
-.text .text1 .textos h1 {
-  font-size: 8em;
-  line-height: 100px;
+.hero .text .textos h1 {
+  font-size: 7vw;
+  line-height: 10vh;
   margin-bottom: 20px;
 }
-.text .text1 .textos p {
+.hero .text .textos p {
   font-size: 1.5rem;
   line-height: 25px;
   width: 90%;
 }
-.text .text1 .butonns {
+.hero .text .butonns {
   display: flex;
   gap: 20px;
   width: 40%;
@@ -125,10 +125,7 @@ header {
   justify-content: center;
   align-items: center;
   background-color: #f3f5f8;
-  height: 184px;
-  top: 703px;
-  left: -1px;
-  opacity: 1;
+  height: 25vh;
 }
 .status .outro {
   display: flex;
@@ -397,4 +394,11 @@ footer .footer-links .links-rapidos ul li a {
   gap: 20px;
   margin-top: 20px;
   width: 150px;
+}
+
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+  }
 }/*# sourceMappingURL=style.css.map */
