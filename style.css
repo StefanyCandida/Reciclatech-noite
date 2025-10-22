@@ -39,7 +39,7 @@ header {
 }
 .logonav .navigation nav ul {
   display: flex;
-  width: 80%;
+  width: 300px;
   justify-content: space-around;
   list-style: none;
   font-family: Poppins;
@@ -53,40 +53,42 @@ header {
   text-decoration: none;
 }
 .logonav .navigation button {
-  width: 12vw;
+  width: 250px;
   height: 50px;
   border-radius: 6px;
   opacity: 1;
   background-color: #21c05c;
   color: #ffffff;
   border: none;
-  padding: 10px 30px;
+  font-size: 16px;
+  padding-left: 2%;
+  padding-right: 25px;
 }
 
 .hero {
   display: flex;
   justify-content: space-between;
   margin: 37px;
-  align-items: center;
   gap: 50px;
-  height: 60vh;
+  height: 50vh;
 }
 .hero img {
-  width: 30vw;
+  height: 80%;
   margin-bottom: 30px;
 }
 .hero .text {
-  height: 85%;
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 .hero .text .textos {
   display: flex;
   flex-direction: column;
-  margin-bottom: 50px;
 }
 .hero .text .textos h1 {
-  font-size: 7vw;
+  font-size: 5vw;
   line-height: 10vh;
-  margin-bottom: 20px;
 }
 .hero .text .textos p {
   font-size: 1.5rem;
@@ -95,8 +97,8 @@ header {
 }
 .hero .text .butonns {
   display: flex;
+  align-items: center;
   gap: 20px;
-  width: 40%;
 }
 
 #btn1 {
@@ -107,17 +109,30 @@ header {
   background-color: #21c05c;
   color: #ffffff;
   border: none;
-  padding: 10px 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  gap: 15px;
+}
+#btn1 img {
+  padding-top: 20px;
 }
 
 #btn2 {
   width: 200px;
   height: 50px;
   border-radius: 6px;
-  opacity: 1;
   color: #2563eb;
   border: solid 1px #2563eb;
-  padding: 10px 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  font-size: 16px;
+}
+#btn2 img {
+  padding-top: 20px;
 }
 
 .status {
@@ -163,62 +178,78 @@ header {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  padding: 50px;
+  padding: 90px;
   gap: 20px;
-  padding: 50px;
 }
 .steps h3 {
-  font-size: 50px;
+  font-size: 4rem;
 }
 .steps p {
-  font-size: 40px;
+  font-size: 2rem;
+  font-weight: 200;
 }
 
 .cards {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 50px;
+  gap: 5vw;
   width: 100%;
-  padding: 100px 100px 0px 100px;
-}
-.cards .card {
-  width: 50vw;
-  border-radius: 10px;
-  background-color: #f3f5fb;
-}
-.cards .card h4 {
-  font-size: 2rem;
-}
-.cards .card p {
-  font-size: 1.2rem;
 }
 
 .card {
-  width: 300px;
-  background: #fff;
-  border-radius: 16px;
-}
-.card__content {
-  padding: 1rem;
-}
-.card__text {
-  font-size: 0.95rem;
-  color: #666;
-  margin-bottom: 1rem;
-  padding: 1rem;
-}
-
-ol {
+  width: 40vw;
+  border-radius: 10px;
+  background-color: #f3f5fb;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
   gap: 20px;
-  padding: 1rem;
 }
-ol li {
+.card img {
+  width: 10%;
+  height: 10%;
+}
+.card .content {
+  font-size: 2rem;
+  font-weight: 400;
+  color: #16a34a;
+}
+.card .content-ad {
+  font-size: 2rem;
+  font-weight: 400;
+  color: #2563eb;
+}
+.card .card-text {
+  font-size: 1.5rem;
+  color: #666;
+  padding-left: 30px;
+}
+.card .doadores {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 30px 30px 0;
+}
+.card .grupos {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 30px 30px 60px;
+}
+.card .grupos .listas {
+  display: flex;
+  gap: 20px;
+}
+.card .grupos .listas img {
+  width: 5%;
+  height: 60%;
+}
+.card .grupos .listas h3 {
+  font-size: 1.5rem;
+}
+.card .grupos .listas p {
+  font-size: 1.2rem;
 }
 
 .produtos {
@@ -333,6 +364,7 @@ ol li {
   background-color: #21c05c;
   color: #ffffff;
   border: none;
+  font-size: 16px;
   padding: 10px 30px;
 }
 .cta .butonns-end #btn4 {
@@ -342,6 +374,7 @@ ol li {
   opacity: 1;
   color: #21c05c;
   border: solid 1px #21c05c;
+  font-size: 16px;
   padding: 10px 30px;
 }
 
@@ -375,8 +408,10 @@ footer .footer-links .links-rapidos h4 {
 }
 footer .footer-links .links-rapidos p {
   color: #9ca3af;
+  width: 70%;
 }
 footer .footer-links .links-rapidos ul {
+  list-style: none;
   display: flex;
   flex-direction: column;
   gap: 20px;

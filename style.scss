@@ -41,7 +41,7 @@ header {
 
       ul {
         display: flex;
-        width: 80%;
+        width: 300px;
         justify-content: space-around;
         list-style: none;
         font-family: Poppins;
@@ -49,6 +49,7 @@ header {
         font-style: Regular;
         line-height: 100%;
         letter-spacing: 0%;
+      
 
         a {
           color: black;
@@ -57,42 +58,43 @@ header {
       }
     }
     button {
-      width: 12vw;
+      width: 250px;
       height: 50px;
       border-radius: 6px;
       opacity: 1;
       background-color: $green;
       color: #ffffff;
-      border: none;
-
-      padding: 10px 30px;
+      border: none;       
+      font-size: 16px;
+      padding-left: 2%;
+      padding-right: 25px;
     }
   }
 }
 .hero {
-  display: flex; 
+  display: flex;
   justify-content: space-between;
   margin: 37px;
-  align-items: center;
   gap: 50px;
-  height: 60vh;
+  height: 50vh;
 
   img {
-    width: 30vw;
+    height: 80%;
     margin-bottom: 30px;
   }
   .text {
-    height: 85%; 
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 
     .textos {
       display: flex;
       flex-direction: column;
-      margin-bottom: 50px;
 
       h1 {
-        font-size: 7vw;
+        font-size: 5vw;
         line-height: 10vh;
-        margin-bottom: 20px;
       }
       p {
         font-size: 1.5rem;
@@ -102,8 +104,9 @@ header {
     }
     .butonns {
       display: flex;
+      align-items: center;
       gap: 20px;
-      width: 40%;
+      
     }
   }
 }
@@ -116,18 +119,29 @@ header {
   background-color: $green;
   color: #ffffff;
   border: none;
-
-  padding: 10px 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  gap: 15px;
+  img {
+    padding-top: 20px;
+  }
 }
 #btn2 {
   width: 200px;
   height: 50px;
   border-radius: 6px;
-  opacity: 1;
   color: #2563eb;
   border: solid 1px #2563eb;
-
-  padding: 10px 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+    font-size: 16px;
+  img {
+    padding-top: 20px;
+  }
 }
 
 .status {
@@ -136,7 +150,7 @@ header {
   align-items: center;
   background-color: #f3f5f8;
   height: 25vh;
-  
+
   .outro {
     display: flex;
     justify-content: space-around;
@@ -173,15 +187,15 @@ header {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  padding: 50px;
+  padding: 90px;
   gap: 20px;
 
-  padding: 50px;
   h3 {
-    font-size: 50px;
+    font-size: 4rem;
   }
   p {
-    font-size: 40px;
+    font-size: 2rem;
+    font-weight: 200;
   }
 }
 
@@ -189,52 +203,69 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 50px;
+  gap: 5vw;
   width: 100%;
-  padding: 100px 100px 0px 100px;
-  .card {
-    width: 50vw;
-    border-radius: 10px;
-    background-color: #f3f5fb;
-
-    h4 {
-      font-size: 2rem;
-    }
-    p {
-      font-size: 1.2rem;
-    }
-  }
 }
 
 .card {
-  width: 300px;
-  background: #fff;
-  border-radius: 16px;
-
-  &__content {
-    padding: 1rem;
-  }
-
-  &__text {
-    font-size: 0.95rem;
-    color: #666;
-    margin-bottom: 1rem;
-    padding: 1rem;
-  }
-}
-ol {
+  width: 40vw;
+  border-radius: 10px;
+  background-color: #f3f5fb;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
   gap: 20px;
-  padding: 1rem;
 
-  li {
+  img {
+    width: 10%;
+    height: 10%;
+  }
+
+  .content {
+    font-size: 2rem;
+    font-weight: 400;
+    color: #16a34a;
+  }
+  .content-ad {
+    font-size: 2rem;
+    font-weight: 400;
+    color: #2563eb;
+  }
+
+  .card-text {
+    font-size: 1.5rem;
+    color: #666;
+    padding-left: 30px;
+  }
+
+  .doadores {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 30px 30px 0;
+  }
+  .grupos {
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
+    gap: 20px;
+
+    padding: 30px 30px 60px;
+    .listas {
+      display: flex;
+      gap: 20px;
+      img {
+        width: 5%;
+        height: 60%;
+      }
+      h3 {
+        font-size: 1.5rem;
+      }
+      p {
+        font-size: 1.2rem;
+      }
+    }
   }
 }
-
 .produtos {
   background: #f3f5fb;
   h2 {
@@ -276,6 +307,7 @@ ol {
         width: 50%;
         border: none;
         border-radius: 10px;
+        
       }
     }
   }
@@ -349,7 +381,7 @@ ol {
       background-color: $green;
       color: #ffffff;
       border: none;
-
+ font-size: 16px;
       padding: 10px 30px;
     }
     #btn4 {
@@ -359,7 +391,7 @@ ol {
       opacity: 1;
       color: $green;
       border: solid 1px $green;
-
+ font-size: 16px;
       padding: 10px 30px;
     }
   }
@@ -385,6 +417,7 @@ footer {
       flex-direction: column;
       gap: 30px;
       width: 25%;
+      
       img {
         width: 50%;
       }
@@ -393,9 +426,10 @@ footer {
       }
       p {
         color: #9ca3af;
+        width: 70%;
       }
       ul {
-        //list-style: none;
+        list-style: none;
         display: flex;
         flex-direction: column;
         gap: 20px;
