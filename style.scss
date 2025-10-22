@@ -362,12 +362,16 @@ header {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  gap: 20px;
+  gap: 30px;
   background: #f3f5fb;
-  height: 300px;
+  height: 45vh;
   margin-top: 50px;
   h2 {
     font-size: 3rem;
+  }
+  p{
+     font-size: 1.5rem;
+     width: 35%;
   }
   .butonns-end {
     display: flex;
